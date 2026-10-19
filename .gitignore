@@ -1,0 +1,18 @@
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+
+# Operating system files
+.DS_Store
+**/.DS_Store
+
+# Logs
+*.log
+
+# Local configuration
+.vscode/
