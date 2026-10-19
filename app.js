@@ -94,9 +94,9 @@ async function startServer() {
         next();
     });
 
-    app.get("/", (req, res) => {
-        res.send("Hi, I am root");
-    });
+   app.get("/", (req, res) => {
+    res.redirect("/listings");
+});
 
     // Do not expose demo account creation in production.
     if (process.env.NODE_ENV !== "production") {
